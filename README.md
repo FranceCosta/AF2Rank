@@ -3,7 +3,7 @@
 I have added a script to score with AF2 any given protein structure.
 Example:
 ```
-python ./scripts/AF2rank.py --input_pdb ./test/test.pdb --mask_sidechains_add_cb test1
+python AF2rank.py --input_pdb ./test/test.pdb --mask_sidechains_add_cb test1
 ```
 Usage:
 ```
