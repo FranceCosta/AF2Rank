@@ -1,3 +1,39 @@
+# AF2Rank 
+
+I have added a script to score with AF2 any given protein structure.
+Example:
+```
+python ./scripts/test_AF2rank.py --input_pdb ./test/test.pdb --mask_sidechains_add_cb test1
+```
+Usage:
+```
+usage: test_AF2rank.py [-h] [--input_pdb INPUT_PDB] [--recycles RECYCLES] [--model_num MODEL_NUM] [--seed SEED] [--deterministic] [--mask_sidechains] [--mask_sidechains_add_cb] [--seq_replacement SEQ_REPLACEMENT] [--af2_dir AF2_DIR] [--output_dir OUTPUT_DIR] [--tm_exec TM_EXEC] name
+
+positional arguments:
+  name                  name to save everything under
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input_pdb INPUT_PDB
+                        Input pdb file
+  --recycles RECYCLES   Number of recycles when predicting
+  --model_num MODEL_NUM
+                        Which AF2 model to use
+  --seed SEED           RNG Seed
+  --deterministic       make all data processing deterministic (no masking, etc.)
+  --mask_sidechains     mask out sidechain atoms except for C-Beta
+  --mask_sidechains_add_cb
+                        mask out sidechain atoms except for C-Beta, and add C-Beta to glycines
+  --seq_replacement SEQ_REPLACEMENT
+                        Amino acid residue to fill the decoy sequence with. Default keeps target sequence
+  --af2_dir AF2_DIR     AlphaFold code and weights directory
+  --output_dir OUTPUT_DIR
+                        Output
+  --tm_exec TM_EXEC     TMScore executable
+```
+
+**Original repo README**:
+
 # AF2Rank
 
 Code for the paper "State-of-the-Art Estimation of Protein
