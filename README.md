@@ -3,11 +3,11 @@
 I have added a script to score with AF2 any given protein structure.
 Example:
 ```
-python ./scripts/test_AF2rank.py --input_pdb ./test/test.pdb --mask_sidechains_add_cb test1
+python ./scripts/AF2rank.py --input_pdb ./test/test.pdb --mask_sidechains_add_cb test1
 ```
 Usage:
 ```
-usage: test_AF2rank.py [-h] [--input_pdb INPUT_PDB] [--recycles RECYCLES] [--model_num MODEL_NUM] [--seed SEED] [--deterministic] [--mask_sidechains] [--mask_sidechains_add_cb] [--seq_replacement SEQ_REPLACEMENT] [--af2_dir AF2_DIR] [--output_dir OUTPUT_DIR] [--tm_exec TM_EXEC] name
+usage: AF2rank.py [-h] [--input_pdb INPUT_PDB] [--recycles RECYCLES] [--model_num MODEL_NUM] [--seed SEED] [--deterministic] [--mask_sidechains] [--mask_sidechains_add_cb] [--seq_replacement SEQ_REPLACEMENT] [--af2_dir AF2_DIR] [--output_dir OUTPUT_DIR] [--tm_exec TM_EXEC] name
 
 positional arguments:
   name                  name to save everything under
